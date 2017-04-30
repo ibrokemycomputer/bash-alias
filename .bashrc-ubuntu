@@ -1,0 +1,12 @@
+alias update='sudo apt-get update'
+
+alias upgrade='sudo apt-get upgrade'
+
+function install { sudo apt-get install "$1"; }
+export -f install
+
+function remove { sudo apt-get remove "$1"; }
+export -f remove
+
+function search { sudo apt-cache search "$1"; }
+export -f search
